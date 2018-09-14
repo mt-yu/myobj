@@ -1,21 +1,3 @@
-cd ~
-pyenv
-ls
-ls -a
-sudo rm -rf .bashrc
-pyenv
-exit
-pyenv
-ls -a
-cd ~
-ls
-pyenv
-ls -a
-vim .bashrc
-exit
-cd ~
-pyenv
-ls -a
 sudo rm -rf .bash_profile 
 exit
 cd ~!
@@ -455,3 +437,64 @@ cd ~
 ls
 whereis .vimrc
 whereis vim
+cd ~
+cd web18/
+ls
+cd mysite/
+ls
+cd blog/
+ls
+vim models.py 
+cd ..
+ls
+python manage.py  makemigrations
+vim ~/web18/mysite/blog/models.py 
+python manage.py  makemigrations
+vim ~/web18/mysite/blog/models.py 
+python manage.py  makemigrations
+cd ~
+ls
+ls -a
+vim .vimrc
+vim .vimrc
+cd web18/
+cd mysite/
+ls
+vim blog/models.py 
+python manage.py  makemigrations
+vim blog/models.py 
+python manage.py  makemigrations
+python manage.py  migrate
+python manage.py  createsuperuser
+vim ~/.bashrc
+ls
+ls
+cd blog/
+ls
+vim admin.py 
+pip install pytz
+python
+ls
+vim admin.py
+vim admin.py
+vim admin.py
+vim admin.py
+cd ~
+ls
+git status
+sudo git add .
+sudo git commit -m "pyenv安装与环境搭建,Django简单博客系统建立"
+sudo git push origion master 
+sudo git push oringin master 
+sudo git push origin master 
+su root
+cd ..
+ls
+cd ..
+ls
+cd ~
+ls
+su root
+cd ~
+ls
+su root
