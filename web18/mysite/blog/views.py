@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import BlogAricles
+from . models import BlogArticles
 # Create your views here.
 
 def blog_title(request):
-	blogs = BlogArticles.objects.all()
-	return render(request, "blog/titles.html", {"blog":blogs})
+    blogs = BlogArticles.objects.all()
+    return render(request, "blog/titles.html", {"blog":blogs})

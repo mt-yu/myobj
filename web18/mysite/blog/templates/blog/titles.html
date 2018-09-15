@@ -1,14 +1,16 @@
 <!--title 模版文件-->
+
+<!--表示继承已有的模版base.html-->
 {% extends "base.html" %}
-{% block title %}blog titles{% endblock %}
-{% block content %}
+{% block title %}blog titles{% endblock %}<!--对父模板中的同名模块进行重写-->
+{% block content %}<!--对父模块中的同名模块进行重写-->
 <div class="row text-center vertical-middle-sm">
 	<h1>我的博客</h1>
 </div>
 <div class="row">
 	<div class="col-xs-12 col-md-8">
 	<ul>
-	{% for blog in blogs %}
+	{% for blog in blogs %} <!--循环语句-->
 		<li>{{blog.title}}</li>
 	{% endfor %}
 	</ul>

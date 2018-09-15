@@ -1,177 +1,3 @@
-sudo rm -rf .bash_profile 
-exit
-cd ~!
-cd ~
-ls
-ls
-pyenv
-pyenv install 3.5.3 -v
-pyenv install 3.5.3 -v
-pyenv versions
-pyenv version
-pyenv -v
-q
-exit
-cd ~
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev
-cd ~
-pyenv
-pyenv
-pyenv update
-pyenv --version
-pyenv -v
-echo $PATH
-pyenv install -l
-pyenv install 3.5.2 -v
-su root
-pyenv
-su root
-ls
-cd ~
-ls -a
-cd .git
-ls
-vim config
-sudo vim config
-git status
-cd ..
-git status
-git add .
-sudo git add .
-git status
-sudo git commit -m "init 180912"
-git status
-ssh -T git@github.com
-sudo git push -u origin master
-sudo git push -u origin master
-ls..
-ls 
-rm -rf .ssh/
-ls
-ssh-keygen -t rsa -C "as555253as@gmail.com"
-ls .ssh/
-cd .ssh/
-ls
-vim id_rsa.pub 
-cd ..
-ls
-sudo git remote rm origin
-sudo git remote add origin git@github.com:mt-yu/myobj.git
-git push -u origin master
-sudo git push -u origin master
-cd ..
-ls
-cd python/
-ls
-sudo rm -rf .ssh/
-ssh-keygen -t rsa -C "as555253as@gmail.com"
-cd .ssh/
-ls
-vim id_rsa.pub 
-cd ..
-ls
-sudo git remote rm origin
-sudo git remote add origin git@github.com:mt-yu/myobj.git
-sudo git push -u origin master
-ssh -T git@github.com
-ssh -T git@github.com
-git config --list
-cd ..
-git config --list
-ls
-cd python/
-ls
-ls -a
-vim .gitignore
-sudo git reset --hard
-git log
-sudo git reset --hard <ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqOP+CuvYEz14utQAsQk+qJ+8592s11sDCoknW0c7gX9/ZhhV/7xbivWdun4ZzU4LSiDhBYMFdS97yzFFdCbswuIlEwFuCd3ui6CeWwTQ95jI0BwN1G2PRXuhza2gV78MY6GThtCNE+j1z7lcqEbNpsRNMZiHopaFHq7hW0QDFRtAjnsP95Ap2BKOm7U0EylVQM1h8UToBcALmVLetc6W9wedd4j17C57gd+f4/KTVz+Wix5uiJ0mNcCnrDT/EhKCsao2pKBpPcZFazCn4KjXF0eR/77Eb64Z9RzTXAf6U+TdKpTQCZHM/l/AeDzKu83Fhgm5kL2G999psW/dIjuj7 as555253as@gmail.com>
-sudo git reset --hard <69a4117931458>
-sudo git reset --hard 69a4117931458b5a13b6ba7053c0488ba5f3b8d1
-git status
-ls
-ls -a
-git log
-git 
-ls
-git
-ls
-ls -a
-cat readme.md 
-ssh -keygen -t rsa -C "30967271+mt-yu@users.noreply.github.com"
-ls -a
-sudo ssh -keygen -t rsa -C "30967271+mt-yu@users.noreply.github.com"
-sudo ssh-keygen -t rsa -C "30967271+mt-yu@users.noreply.github.com"
-id
-ls
-ls -a
-ssh-keygen -t rsa -C "30967271+mt-yu@users.noreply.github.com"
-su root
-cd ~
-ls
-ls -a
-cd .ssh/
-vim id_rsa.pub 
-cd ..
-ls
-vim .gitignore
-vim .gitignore
-ls -a
-vim .gitignore
-git status
-sudo git rester --cacher
-sudo git reset --cacher
-sudo git reset HEAD
-git status
-git show
-ls -a
-touch a.c
-git status
-rm -rf a.c
-git status
-git add .
-sudo git add .
-git status
-sudo git remote add origin git@github.com:mt-yu/myobj.git
-sudo git remote rm origin
-sudo git remote add origin git@github.com:mt-yu/myobj.git
-sudo git push -u origin master
-sudo git push -u origin master
-ls
-vim test.txt
-ls
-git status
-git add .
-sudo git add.
-sudo git add .
-sudo git commit -m "test"
-sudo git commit -m "test"
-git config --list
-git config --global user.email "30967271+mt-yu@users.noreply.github.com"
-git config --global user.name"mt-yu"
-ssh -T git@github.com
-sudo git push -u  origin master
-sudo git push -u  origin master
-ls
-ls -a
-cd .gitconfig 
-sudo vim .gintconfig
-sudo vim .gitconfig 
-ls .git
-sudo vim config
-sudo vim .git/config 
-sudo git push -u  origin master
-sudo git push -u  origin master
-git log
-git
-ls
-git status
-vim .gitignore 
-git status
-git commit -m "test"
-sudo git commit -m "test"
-git status
-sudo git push -u origin master
 su root
 cd ~
 ls
@@ -498,3 +324,177 @@ su root
 cd ~
 ls
 su root
+ls
+cd ~
+ls
+clear
+ls
+cd web18/
+ls
+cd mysite/
+ls
+python manage.py  shell
+clear
+tree
+ls
+cd blog/
+ls
+vim views.py 
+ls
+cd .
+cd ..
+tree
+whereis base.html
+clear
+ls
+cd blog/
+mkdir templates
+ls
+cd templates/
+touch base.html
+ls
+mkdir blog
+cd blog/
+touch titles.html
+ls
+ls
+cd 
+ls
+cd web18/
+ls
+cd mysite/
+ls
+cd blog/
+cd te
+ls
+cd templates/
+ls
+vim base.html
+vim base.html
+ls
+cd blog/
+ls
+vim titles.html 
+ls
+cd web18/
+ls
+su yu
+clear
+cd `
+
+
+q
+cd ~
+ls
+cd web18/
+ls
+cd mysite/
+ls
+python manage.py  runserver
+cd ..
+cd /
+ls
+cd etc/
+ls
+cd sysconfig
+vim sysctl.conf 
+system
+cd systemd/
+ls
+ls -a
+ls -l
+cd system
+ks
+ls
+ls
+ls
+cd ..
+ls
+vim system.conf 
+cd ..
+ls
+cd network
+ls
+whereis systemcong
+cd ..
+cd~
+ cd ..
+ls
+cd ~
+ls
+git add .
+sudo git add  .
+sudo git commit -m "显示文章标题"
+git status
+sudo git push origin master
+su root
+clear
+ls
+cd web18/
+cd mysite/
+ls
+ls
+cd blog/
+ls
+cd templates/
+cd blog/
+ls
+cd ti
+vim titles.html 
+ls
+ls -a
+vim titles.html 
+vim .titles.html.swp 
+vim titles.html 
+ls
+vim title.htm 
+ls
+ls -a
+rm -rf titles.html .titles.html.swp 
+ls
+mv title.htm titles.html
+ls
+vim titles.html 
+clear
+git status
+sudo git status
+vim titles.html 
+clear
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd mysite/
+ls
+vim urls.py
+cd ..
+ls
+cd blog
+ls
+tree
+ls
+ls
+cd ..
+ls
+cd blog
+ls
+touch urls.py
+ls
+vim urls.py 
+cd ..
+ls
+python manage.py  runserver
+ls
+ls
+cd ..\
+cd ..
+ls
+ls
+cd web18/
+ls
+ls -a
+cd web18/
+ls
+vim
+python
