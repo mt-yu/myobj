@@ -1,4 +1,3 @@
 .ssh/*
 .viminfo
-.pyenv/*
 web/.python-version
