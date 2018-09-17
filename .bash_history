@@ -1,35 +1,3 @@
-su root
-cd ~
-ls
-sudo git push -u origin mester
-sudo git push -u origin master
-sudo #curl -L http://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-#curl -L http://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-#curl -L http://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-ls -a
-git status
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-sudo apt-cat install curl
-sudo apt-get install curl
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-ls.
-ls -a
-vim .bashrc
-pyenv
-sudo vim ~/.bash_profile
-sudo vim ~/.bash_profile
-pyenv
-su root
-pyenv
-su root
-ls
-cd python/
-whoami
-ls -a
-ls
-tree
-python
-python3
 git
 github
 git-hub
@@ -498,3 +466,35 @@ cd web18/
 ls
 vim
 python
+ls
+cd ~
+ls
+cd web18/
+cd mysite/
+ls
+cd blog/
+ls
+vim models.py 
+ls
+vim models.py 
+cd ~
+ls
+git add .
+sudo git add .
+ls
+git commit -m "显示文章标题"
+sudo git commit -m "显示文章标题"
+git stauts
+git status
+sudo git push origin master
+init 0
+sudo init 0
+cd ~
+ls
+cd web18/
+cd mysite/
+ls
+python manage.py runserver
+python manage.py runserver
+python manage.py runserver
+python manage.py runserver

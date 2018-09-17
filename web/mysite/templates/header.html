@@ -1,0 +1,25 @@
+<!--声明引入静态文件的标签-->
+{% load staticfiles %}
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://github.com/mt-yu"><img src="{% static '/images/logo.png'%}" width="100px" height="30px"></a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav" role="navigation">
+                <!--使用URLconf中为应用设置的namespace 和相关的name 值，拼接成应用的入口链接URL-->
+                <li><a href="{% url 'blog:blog_title' %}"> BLOG </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right:10px">
+                <!--is_authenticated 返回用户的登录状态已经登录为True-->
+                {% if user.is_authenticated %}
+                <li><a href="#">{{ user.username }}</a></li>
+                <li><a href="{% url 'account:user_logout' %}">Logout</a></li>
+                {% else %}
+                <!--没有使用http://localhost:8000/account/login（硬编码）是因为将来把代码部署道生产环境，必须修改域名部分，万一忘记了，那这个访问链接就会报错-->
+                <li><a href="{% url 'account:user_login' %}">LOGIN</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>
