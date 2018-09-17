@@ -1,4 +1,4 @@
 .ssh/*
 .viminfo
 .pyenv/*
-.web/.python-version
+web/.python-version
