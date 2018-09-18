@@ -9,3 +9,4 @@ web/.python-version
 .viminfo.tmp
 .pyenv
 .cache
+.python-version
