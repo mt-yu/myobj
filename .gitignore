@@ -5,3 +5,6 @@ web/.python-version
 .cache/*
 *.log
 .bash_history
+.cache/*
+.viminfo.tmp
+.pyenv
