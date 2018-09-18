@@ -8,3 +8,4 @@ web/.python-version
 .cache/*
 .viminfo.tmp
 .pyenv
+.cache
