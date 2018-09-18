@@ -5,6 +5,3 @@ web/.python-version
 .cache/*
 *.log
 .bash_history
-web18/.python-version
-
-
