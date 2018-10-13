@@ -6,6 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="django" />
     <orderEntry type="module" module-name="django" />
+    <orderEntry type="module" module-name="contrib" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />

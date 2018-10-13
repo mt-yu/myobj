@@ -5,7 +5,7 @@ from .models import BlogArticles
 
 #查看文章标题的函数
 def blog_title(request):
-    blogs = BlogArticles.objects.all()
+    blogs = BlogArticles.objects.all()      #获得所有BlogArticles对象实例
     return render(request, "blog/titles.html", {"blogs":blogs})
 
 #查看文章详情请求的函数

@@ -16,6 +16,12 @@ urlpatterns = [
 
     #url(r'^logout/$', auth_views.LogoutView.as_view(), name="user_logout"), #内置django退出登录
     #path('logout/', auth_views.LogoutView.as_view(),{"template_name": "account/login.html"},name='user_logout')
-    url(r'^logout/$', views.user_logout, name="user_logout")
+    url(r'^logout/$', views.user_logout, name="user_logout"),
     #url(r'^logout/$', auth_views.LogoutView.as_view(), {"template_name" :"account/logout.html"}, name="user_logout"),
+
+    url(r'^register/$', views.register, name="user_register"),
+
+    url(r'^password-change/$', auth_views.password_change, name='password_change'),
+    url(r'^password-change-done/$', auth_views.password_change_done, name='password_change_done'),
+
 ]

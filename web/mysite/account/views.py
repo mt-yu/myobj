@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 #django 默认的用户登录两个方法
 from django.contrib.auth import authenticate, login
-from .forms import LoginForm
+from .forms import LoginForm, RegistrationForm, UserProfileForm
 
 # Create your views here.
 #定义一个视图函数，处理前端提交的数据，并支持前端的显示请求，第一个参数必须为request
@@ -30,5 +30,27 @@ def user_login(request):
     if request.method == "GET":
         login_form = LoginForm()
         return render(request, "account/login.html", {"form":login_form})
+
 def user_logout(request):
     return render(request, "account/logout.html")
+
+def register(request):
+    if request.method == "POST":
+        user_form = RegistrationForm(request.POST)
+        userprofile_form = UserProfileForm(request.POST)
+        if user_form.is_valid() and userprofile_form.is_valid():
+            new_user = user_form.save(commit = False)
+            new_user.set_password(user_form.cleaned_data['password'])
+            new_user.save()
+
+            new_profile = userprofile_form.save(commit=False)
+            new_profile.user = new_user
+            new_profile.save()
+
+            return HttpResponse("successfully")
+        else:
+            return HttpResponse("Sorry, your can not register.")
+    else:
+        user_form = RegistrationForm()
+        userprofile_form = UserProfileForm()
+        return render(request, "account/register.html", {"form" : user_form, "profile" : userprofile_form})
