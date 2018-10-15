@@ -21,7 +21,7 @@ urlpatterns = [
 
     url(r'^register/$', views.register, name="user_register"),
 
-    url(r'^password-change/$', auth_views.password_change, name='password_change'),
-    url(r'^password-change-done/$', auth_views.password_change_done, name='password_change_done'),
+    url(r'^password-change/$', views.PasswordChangeView.as_view(), {"template_name": "account/password_change_form.html"}),
+    url(r'^password-change-done/$', auth_views.PasswordChangeDoneView.as_view(), name='password_change_done'),
 
 ]
