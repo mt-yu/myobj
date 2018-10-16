@@ -5,8 +5,15 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm, RegistrationForm, UserProfileForm
 
+#引用django 自带的模块
 from django.views.generic.edit import FormView
-
+from django.contrib.auth.forms import PasswordChangeForm
+from django.urls import reverse_lazy
+from django.utils.translation import gettext_lazy as _
+from django.utils.decorators import method_decorator
+from django.views.decorators.debug import sensitive_post_parameters
+from django.views.decorators.csrf import csrf_protect
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 #定义一个视图函数，处理前端提交的数据，并支持前端的显示请求，第一个参数必须为request
@@ -58,6 +65,12 @@ def register(request):
         userprofile_form = UserProfileForm()
         return render(request, "account/register.html", {"form" : user_form, "profile" : userprofile_form})
 
+
+def passwordChangeView(request):
+    return render(request, "account/password_change_form.html")
+
+def passwordChangeDoneView(request):
+    return render(request, "account/password_change_done.html")
 
 class PasswordContextMixin:
     extra_context = None
