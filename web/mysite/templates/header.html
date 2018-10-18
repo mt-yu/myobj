@@ -1,5 +1,6 @@
 <!--声明引入静态文件的标签-->
 {% load staticfiles %}
+
 <div class="container">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -13,7 +14,15 @@
             <ul class="nav navbar-nav navbar-right" style="margin-right:10px">
                 <!--is_authenticated 返回用户的登录状态已经登录为True-->
                 {% if user.is_authenticated %}
-                <li><a href="#">{{ user.username }}</a></li>
+                <li>
+                    <div class="dropdown" style="margin-top:8px">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">{{ user.username }}
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'account:password_change' %}">修改密码</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="{% url 'account:user_logout' %}">Logout</a></li>
                 {% else %}
                 <!--没有使用http://localhost:8000/account/login（硬编码）是因为将来把代码部署道生产环境，必须修改域名部分，万一忘记了，那这个访问链接就会报错-->
@@ -23,3 +32,6 @@
         </div>
     </nav>
 </div>
+
+<script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>

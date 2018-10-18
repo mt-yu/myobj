@@ -26,7 +26,7 @@ SECRET_KEY = 'p+jr3zi2w37byy&gqi^=uoacvjm^zu@aeq4w$p_gmev4(qak4j'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+#'immtyu.ngrok.xiaomiqiu.cn'
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'account',
+    'password_reset',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,14 @@ STATICFILES_DIRS = (
 #登录后重定向设置
 LOGIN_REDIRECT_URL = '/blog/'
 #LOGOUT_REDIRECT_URL = '/blog/'
+
+#配置邮箱发送服务器
+#加入EMAIL_BACKEND 即将邮箱发送显示在控制台而不发送到对应邮箱，在开发中使用
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_USER = "229060762@qq.com"
+EMAIL_HOST_PASSWORD = "zcwokmdlypzcbiec"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+#EMAIL_FROM = "Tencent<229060762@qq.com>"
+DEFAULT_FROM_EMAIL = "229060762@qq.com"

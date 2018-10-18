@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include,url
-#from django.urls import path,include
+#from django.urls import path,re_path,include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('blog.urls', namespace='blog')),
     url(r'^account/', include('account.urls', namespace='account')),
+    url(r'^pwd_reset/' ,include("password_reset.urls", namespace="pwd_reset", app_name="pwd_reset")),
+
     #path('admin/', admin.site.urls),
     #path('blog/', include('blog.urls')),
 ]
