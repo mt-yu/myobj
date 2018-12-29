@@ -6,7 +6,8 @@
     <h1>Register</h1>
     <p>If you are a user, <strong><a href="{% url 'account:user_login' %}"> Login</a></strong>,please</p>
     <p>or register.</p>
-    <form class="form-horizontal" action="." method=" post" >{% csrf_token %}
+    <form class="form-horizontal" action="." method="post" >{% csrf_token %}
+        {% csrf_token %}
         <div class="form-group">
             <label for="{{ form.username.id_for_label }}" class ="col-md-5 control-label">Username</label>
             <div class="col-md-6 text-left">{{ form.username }}</div>

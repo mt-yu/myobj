@@ -25,7 +25,7 @@ SECRET_KEY = 'p+jr3zi2w37byy&gqi^=uoacvjm^zu@aeq4w$p_gmev4(qak4j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 #'immtyu.ngrok.xiaomiqiu.cn'
 
 # Application definition
@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'blog',
     'account',
     'password_reset',
+    'article',
+    'image',
+    'sorl.thumbnail',
+    'course',
 ]
 
 MIDDLEWARE = [
@@ -134,17 +138,26 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static/"),
 )
-#登录后重定向设置
-LOGIN_REDIRECT_URL = '/blog/'
-#LOGOUT_REDIRECT_URL = '/blog/'
+# 登录后重定向设置
+LOGIN_REDIRECT_URL = '/home/'
+# LOGOUT_REDIRECT_URL = '/blog/'
 
-#配置邮箱发送服务器
-#加入EMAIL_BACKEND 即将邮箱发送显示在控制台而不发送到对应邮箱，在开发中使用
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# 配置邮箱发送服务器
+# 加入EMAIL_BACKEND 即将邮箱发送显示在控制台而不发送到对应邮箱，在开发中使用
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_HOST_USER = "229060762@qq.com"
 EMAIL_HOST_PASSWORD = "zcwokmdlypzcbiec"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-#EMAIL_FROM = "Tencent<229060762@qq.com>"
+# EMAIL_FROM = "Tencent<229060762@qq.com>"
 DEFAULT_FROM_EMAIL = "229060762@qq.com"
+
+# REDIS 配置
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
+# 用于保存用户上载文件(upload_to)的目录的绝对文件系统路径
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

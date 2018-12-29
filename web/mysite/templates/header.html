@@ -4,15 +4,20 @@
 <div class="container">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="https://github.com/mt-yu"><img src="{% static '/images/logo.png'%}" width="100px" height="30px"></a>
+            <a class="navbar-brand" href="https://github.com/mt-yu" target="_blank"><img src="{% static '/images/logo.png'%}" width="100px" height="30px"></a>
         </div>
         <div>
             <ul class="nav navbar-nav" role="navigation">
-                <!--使用URLconf中为应用设置的namespace 和相关的name 值，拼接成应用的入口链接URL-->
+{#                <!--使用URLconf中为应用设置的namespace 和相关的name 值，拼接成应用的入口链接URL-->#}
+                <li><a href="{% url 'home' %}"> Home </a></li>
                 <li><a href="{% url 'blog:blog_title' %}"> BLOG </a></li>
+                <li><a href="{% url 'article:article_titles' %}"> 文章 </a></li>
+                <li><a href="{% url 'image:falls_images' %}"> 美图 </a></li>
+                <li><a href="{% url 'course:about' %}"> 关于本站 </a></li>
+                <li><a href="{% url 'course:course_list' %}"> 课程 </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-right:10px">
-                <!--is_authenticated 返回用户的登录状态已经登录为True-->
+{#                <!--is_authenticated 返回用户的登录状态已经登录为True-->#}
                 {% if user.is_authenticated %}
                 <li>
                     <div class="dropdown" style="margin-top:8px">
@@ -20,13 +25,17 @@
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <li><a href="{% url 'account:password_change' %}">修改密码</a></li>
+                            <li><a href="{% url 'account:my_information' %}">个人信息</a></li>
+                            <li><a href="{% url 'article:article_column' %}">后台管理</a></li>
+                            <li><a href="{% url 'article:article_post' %}">发布文章</a></li>
                         </ul>
                     </div>
                 </li>
                 <li><a href="{% url 'account:user_logout' %}">Logout</a></li>
                 {% else %}
-                <!--没有使用http://localhost:8000/account/login（硬编码）是因为将来把代码部署道生产环境，必须修改域名部分，万一忘记了，那这个访问链接就会报错-->
+{#                <!--没有使用http://localhost:8000/account/login（硬编码）是因为将来把代码部署道生产环境，必须修改域名部分，万一忘记了，那这个访问链接就会报错-->#}
                 <li><a href="{% url 'account:user_login' %}">LOGIN</a></li>
+                <li><a href="{% url 'account:user_register' %}">Sign up</a></li>
                 {% endif %}
             </ul>
         </div>

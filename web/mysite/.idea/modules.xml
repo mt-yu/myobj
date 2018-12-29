@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../../.pyenv/versions/mt353/lib64/python3.5/site-packages/django/contrib/.idea/contrib.iml" filepath="$PROJECT_DIR$/../../.pyenv/versions/mt353/lib64/python3.5/site-packages/django/contrib/.idea/contrib.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../.pyenv/versions/web355/lib/python3.5/site-packages/django/.idea/django.iml" filepath="$PROJECT_DIR$/../../../.pyenv/versions/web355/lib/python3.5/site-packages/django/.idea/django.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../.pyenv/versions/web355/lib/python3.5/site-packages/django/.idea/django.iml" filepath="$PROJECT_DIR$/../../.pyenv/versions/web355/lib/python3.5/site-packages/django/.idea/django.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/mysite.iml" filepath="$PROJECT_DIR$/.idea/mysite.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/mysite/.idea/mysite.iml" filepath="$USER_HOME$/PycharmProjects/mysite/.idea/mysite.iml" />
     </modules>
   </component>
 </project>
